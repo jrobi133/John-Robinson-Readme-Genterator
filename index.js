@@ -1,32 +1,60 @@
-// array of questions for user
+
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const until = require('until');
 
-// const questions = [
-
-// ];
 
 inquirer.prompt([
     {
         type: 'input',
         name: 'gitHub',
         message: 'What is your Github username?',
+        validate: (gitHubNameInput) => {
+            if (gitHubNameInput) {
+                return true;
+            } else {
+                console.log("Enter your Github username!");
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'emailAddress',
         message: 'What is youre email address?',
+        validate: (userEmailAddress) => {
+            if (userEmailAddress) {
+                return true;
+            } else {
+                console.log("Enter your email address!");
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'projectName',
         message: 'what is your projects name?',
+        validate: (userProjectName) => {
+            if (userProjectName) {
+                return true;
+            } else {
+                console.log("Enter your projects name!");
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'description',
         message: 'Please write a short description of your project.',
+        validate: (userDescription) => {
+            if (userDescription) {
+                return true;
+            } else {
+                console.log("Your description should be longer then that!");
+                return false;
+            }
+        }
     },
     {
         type: 'list',
@@ -38,11 +66,15 @@ inquirer.prompt([
         type: 'input',
         name: 'installCommand',
         message: 'What command should be run to install dependencies?',
+        default: 'npm i',
     },
     {
         type: 'input',
         name: 'runCommand',
         message: 'What command should be run to run tests?',
+        default: function () {
+            return 'npm test';
+          },
     },
     {
         type: 'input',
@@ -55,7 +87,7 @@ inquirer.prompt([
         message: 'What does the user need to know about contributing to the repo?',
     },
 ]).then(response => {
-    console.log('response', response);
+    // console.log('response', response);
     const md = `
 # ${response.projectName}
 
@@ -112,14 +144,4 @@ If you have any question about the repo, open an issue or contact me directly at
     });
 });
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
