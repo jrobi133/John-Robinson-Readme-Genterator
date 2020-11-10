@@ -3,7 +3,7 @@
 
 ## Description:
     
-    This project helps your create a readme on the fly. By inputting a few commands you will have your own readme generated just for you.
+This project helps your create a readme on the fly. By inputting a few commands you will have your own readme generated just for you.
     
     
 ## Table of Contents:
