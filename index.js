@@ -10,7 +10,7 @@ const fs = require('fs');
 inquirer.prompt([
     {
         type: 'input',
-        name: 'name',
+        name: 'gitHub',
         message: 'What is your Github username?',
     },
     {
@@ -53,7 +53,62 @@ inquirer.prompt([
         name: 'userContributing',
         message: 'What does the user need to know about contributing to the repo?',
     },
-])
+]).then(response => {
+    console.log('response', response);
+    const md = `# ${response.projectName}
+
+    ## Description:
+    
+    ${response.description}
+    
+    
+    ## Table of Contents:
+    
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
+    * [Tests](#tests)
+    * [Questions](#questions)
+    
+    
+    ## Installation
+    
+    To install necessary dependencies, run the following command:
+    
+    ${response.installCommand}
+    
+    
+    
+    ## Usage
+    
+    ${response.userNeedToKnow}
+    
+    
+    ## License
+    
+    This project is licensed under ${response.license} license.
+    
+    ## Contributing 
+    
+    ${response.userContributing}
+    
+    
+    ## Test
+    
+    To run test, run the following command:
+    
+    ${response.runCommand}
+    
+    
+    ## Questions 
+    
+    If you have any question about the repo, open an issue or contact me directly at email@gmail.com. you can find more of my work at jrobi133`;
+
+    fs.writeFile('README.md', md, (err) => {
+        console.log('Success!')
+    });
+});
 
 // function to write README file
 function writeToFile(fileName, data) {
