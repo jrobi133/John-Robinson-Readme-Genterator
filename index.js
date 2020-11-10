@@ -55,24 +55,25 @@ inquirer.prompt([
     },
 ]).then(response => {
     console.log('response', response);
-    const md = `# ${response.projectName}
+    const md = `
+# ${response.projectName}
 
-    ## Description:
+## Description:
     
     ${response.description}
     
     
-    ## Table of Contents:
+## Table of Contents:
     
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
     
     
-    ## Installation
+## Installation
     
     To install necessary dependencies, run the following command:
     
@@ -80,30 +81,30 @@ inquirer.prompt([
     
     
     
-    ## Usage
+## Usage
     
     ${response.userNeedToKnow}
     
     
-    ## License
+## License
     
     This project is licensed under ${response.license} license.
     
-    ## Contributing 
+## Contributing 
     
     ${response.userContributing}
     
     
-    ## Test
+## Tests
     
     To run test, run the following command:
     
     ${response.runCommand}
     
     
-    ## Questions 
+## Questions 
     
-    If you have any question about the repo, open an issue or contact me directly at email@gmail.com. you can find more of my work at jrobi133`;
+    If you have any question about the repo, open an issue or contact me directly at email@gmail.com. You can find more of my work at jrobi133`;
 
     fs.writeFile('README.md', md, (err) => {
         console.log('Success!')
