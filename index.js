@@ -155,7 +155,7 @@ To run test, run the following command:
     
 If you have any question about the repo, open an issue or contact me directly at \n${response.emailAddress}. You can find more of my work on my gitHub at :\nhttps://github.com/${response.gitHub}`;
 
-    fs.writeFile('README.md', md, (err) => {
+    fs.writeFile('utils/README.md', md, (err) => {
         console.log('Success!')
     });
 });
