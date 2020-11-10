@@ -109,7 +109,7 @@ inquirer.prompt([
 
 ## Description:
     
-    ${response.description}
+${response.description}
     
     
 ## Table of Contents:
