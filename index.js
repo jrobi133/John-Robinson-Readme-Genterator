@@ -72,9 +72,7 @@ inquirer.prompt([
         type: 'input',
         name: 'runCommand',
         message: 'What command should be run to run tests?',
-        default: function () {
-            return 'npm test';
-          },
+        default: 'npm test'
     },
     {
         type: 'input',
