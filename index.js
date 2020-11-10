@@ -80,11 +80,27 @@ inquirer.prompt([
         type: 'input',
         name: 'userNeedToKnow',
         message: 'What does the user need to know about using the repo?',
+        validate: (whatUserNeedsToKnow) => {
+            if (whatUserNeedsToKnow) {
+                return true;
+            } else {
+                console.log("The User needs to know more then that!");
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'userContributing',
         message: 'What does the user need to know about contributing to the repo?',
+        validate: (userContribute) => {
+            if (userContribute) {
+                return true;
+            } else {
+                console.log("Please enter what the user needs to know!");
+                return false;
+            }
+        }
     },
 ]).then(response => {
     // console.log('response', response);
