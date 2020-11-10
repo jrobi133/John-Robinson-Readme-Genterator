@@ -75,7 +75,7 @@ inquirer.prompt([
     
 ## Installation
     
-    To install necessary dependencies, run the following command:
+To install necessary dependencies, run the following command:
     
     ${response.installCommand}
     
@@ -88,7 +88,7 @@ inquirer.prompt([
     
 ## License
     
-    This project is licensed under ${response.license} license.
+This project is licensed under ${response.license} license.
     
 ## Contributing 
     
@@ -97,14 +97,14 @@ inquirer.prompt([
     
 ## Tests
     
-    To run test, run the following command:
+To run test, run the following command:
     
     ${response.runCommand}
     
     
 ## Questions 
     
-    If you have any question about the repo, open an issue or contact me directly at email@gmail.com. You can find more of my work at jrobi133`;
+If you have any question about the repo, open an issue or contact me directly at \n${response.emailAddress}. You can find more of my work at on gitHub at :\nhttps://github.com/${response.gitHub}`;
 
     fs.writeFile('README.md', md, (err) => {
         console.log('Success!')
