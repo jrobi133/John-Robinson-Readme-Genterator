@@ -59,6 +59,6 @@ https://github.com/jrobi133
 
 ![](/assets/screenshot.PNG)
 
-[![License](${license.link1})](${license.link2})
+[![License](${https://img.shields.io/badge/Website-Portfolio-green.jrobi133.github.io/PortfolioJohnRobinson/index.html})]
 
 
