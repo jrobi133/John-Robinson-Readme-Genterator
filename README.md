@@ -61,6 +61,6 @@ https://github.com/jrobi133
 
 [![License](${https://img.shields.io/badge/Website-Portfolio-green}, ${jrobi133.github.io/PortfolioJohnRobinson/index.html})]
 
-[![Website lbesson.bitbucket.org](https://img.shields.io/website-portfolio/http/lbesson.bitbucket.org.svg)](https://jrobi133.github.io/PortfolioJohnRobinson/index.html)
+[![Website lbesson.bitbucket.org](https://img.shields.io/website-up-down-green-red/http/lbesson.bitbucket.org.svg)](https://jrobi133.github.io/PortfolioJohnRobinson/index.html)
 
 
