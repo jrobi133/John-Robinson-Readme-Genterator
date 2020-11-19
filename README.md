@@ -1,6 +1,6 @@
 
 # Readme Generator
-
+(https://img.shields.io/badge/Website-Portfolio-green?link=https://jrobi133.github.io/PortfolioJohnRobinson/index.html&link=https://jrobi133.github.io/PortfolioJohnRobinson/index.html)
 ## Description:
     
 This project helps your create a readme on the fly. By inputting a few commands you will have your own readme generated just for you. To watch a walkthrough video of this application click this link : https://drive.google.com/file/d/1GIXvspM51fP58Z1SkRhGpMOFoim5BAbZ/view
