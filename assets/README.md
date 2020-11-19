@@ -1,9 +1,9 @@
 
-# Cool New Project
+# Team Builder Generator
 
 ## Description:
     
-In this project you will find some cool things.
+This app helps you create a engineering team with some simple prompts.
     
     
 ## Table of Contents:
@@ -26,16 +26,16 @@ To install necessary dependencies, run the following command:
     
 ## Usage
     
-    Using this app could help with some cool things.
+    The project prompts the user to build a team with the current options of Manager, Engineers, and Interns. After the user answers all the prompts a team.html file will be created based on the user inputs from the prompts showing the team.
     
     
 ## License
     
-This project is licensed under MIT license.
+This project is licensed under None license.
     
 ## Contributing 
     
-    Contributing to this repo will make you cool.
+    contributing is appreciated
     
     
 ## Tests

@@ -104,7 +104,8 @@ inquirer.prompt([
     // console.log('response', response);
     const md = `
 # ${response.projectName}
-
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Website](https://img.shields.io/website-portfolio-down-green-red/http/lbesson.bitbucket.org.svg)](https://jrobi133.github.io/PortfolioJohnRobinson/index.html)
 ## Description:
     
 ${response.description}
@@ -130,7 +131,7 @@ To install necessary dependencies, run the following command:
     
 ## Usage
     
-    ${response.userNeedToKnow}
+${response.userNeedToKnow}
     
     
 ## License
