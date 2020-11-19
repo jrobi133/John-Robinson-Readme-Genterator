@@ -116,7 +116,7 @@ ${response.description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
+* [Contributors](#contributors)
 * [Tests](#tests)
 * [Questions](#questions)
     
@@ -138,7 +138,7 @@ ${response.userNeedToKnow}
     
 This project is licensed under ${response.license} license.
     
-## Contributing 
+## Contributors 
     
     ${response.userContributing}
     
