@@ -90,7 +90,7 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'userContributing',
-        message: 'What does the user need to know about contributing to the repo?',
+        message: 'Who are all the Contributors to this app?',
         validate: (userContribute) => {
             if (userContribute) {
                 return true;

@@ -1,9 +1,10 @@
 
-# Team Builder Generator
-
+# John Robinson Note Taker
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Website](https://img.shields.io/website-portfolio-down-green-red/http/lbesson.bitbucket.org.svg)](https://jrobi133.github.io/PortfolioJohnRobinson/index.html)
 ## Description:
     
-This app helps you create a engineering team with some simple prompts.
+This is an application that can be used to write, save, and delete notes.
     
     
 ## Table of Contents:
@@ -11,7 +12,7 @@ This app helps you create a engineering team with some simple prompts.
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
+* [Contributors](#contributors)
 * [Tests](#tests)
 * [Questions](#questions)
     
@@ -26,16 +27,16 @@ To install necessary dependencies, run the following command:
     
 ## Usage
     
-    The project prompts the user to build a team with the current options of Manager, Engineers, and Interns. After the user answers all the prompts a team.html file will be created based on the user inputs from the prompts showing the team.
+For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
     
     
 ## License
     
-This project is licensed under None license.
+This project is licensed under MIT license.
     
-## Contributing 
+## Contributors 
     
-    contributing is appreciated
+    John Robinson
     
     
 ## Tests
@@ -48,5 +49,5 @@ To run test, run the following command:
 ## Questions 
     
 If you have any question about the repo, open an issue or contact me directly at 
-johnarobinson133@gmail.com. You can find more of my work on my gitHub at :
+johnarobinson133@gamil.com. You can find more of my work on my gitHub at :
 https://github.com/jrobi133
